@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class printing_identity_cards_using_array {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the total number of Identity cards you want to make(in numerial number 1234..etc) ");
+        int a = sc.nextInt();
+        int i;
+        int j = 0;
+        int m = 0;
+        long[] ph_num = new long[a];
+        String[] name = new String[a];
+        String[] name2 = new String[a];
+        System.out.println("You have entered "+a+" Identity cards\nNow provide their name for above process ");
+        for (i = 0; i < name.length; i++) {
+            name[i] = sc.next();
+            name2[j] = name[i];
+            System.out.println("Name is :- "+name[i]+" now enter next name");
+            j++;
+
+        }
+        System.out.println("Enter the phone number for every student");
+        for (m = 0; m < ph_num.length; m++) {
+            ph_num[m] = sc.nextLong();
+        }
+        System.out.println("Total identity cards to be printed :- " + a);
+        System.out.println("The name which are submitted along with their phone number's :- ");
+        for (String k : name2){
+
+            System.out.println("Mr. "+k);
+
+        }
+        System.out.println("Their phone numbers are :- ");
+        for(long o:ph_num){
+            System.out.println(o);
+        }
+    }
+}
