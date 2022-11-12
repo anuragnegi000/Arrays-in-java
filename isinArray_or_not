@@ -1,0 +1,20 @@
+public class practise_set{
+public static void main(String []args){
+ float[]marks={45.2f,41.1f,60.4f,34.8f};
+        boolean isinArray=false;
+        float num=60.2f;
+        for(float element:marks) {
+            if (num == element) {
+                isinArray = true;
+                break;
+            }
+        }
+        if(isinArray){
+            System.out.println("The value is present in array");
+        }
+        else{
+            System.out.println("The value is not present in array");
+        }
+
+    }
+}
